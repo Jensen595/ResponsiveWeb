@@ -1,0 +1,348 @@
+
+        footer {
+            /* -- This is the styles for the footer  -- */
+            text-align: center;
+            padding: 3px;
+        }
+
+        p{
+            padding: 15px; /* -- Gives space around text -- */
+        }
+
+        h2{
+            padding: 5px; /* -- Gives space around text -- */
+        }
+    
+        a {
+            /* -- This are the styles for the text in the header -- */
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+       
+        img,
+        picture {
+            /* -- This is the size for the images -- */
+            max-width: 100%;
+            display: block;
+        }
+        
+        .container {
+            max-width: 60rem;
+            /* -- This controls the size of the container holding the info -- */
+            margin-inline: auto;
+            padding-inline: 2rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-gap: 20px;
+            /* -- This controls the space between the other containers  -- */
+            padding: 20px;
+        }
+        
+        .titleweather{
+
+            padding: 15px; /* -- Gives space around text -- */
+            
+        }
+
+        .searchbar{
+
+            position:relative; left:20px; top:2px; /* -- This allows me to move the search bar anywhere -- */
+
+        }
+
+        .title{
+            font-size: large; /* -- font size -- */
+        }
+        
+        
+        .article,
+        .weather,
+        .worldnews {
+            background-color: white;
+            /* --The color of the card  -- */
+            box-shadow: rgba(0, 0, 0, 0.2) 0.25rem 0.1rem 0.1rem;
+            /* -- The color of the shadow and the depth -- */
+            grid-gap: 20px;
+        }
+        
+        .weather_img
+        {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover; 
+        }
+        
+        .article.one {
+            /* -- This is the postion on where the container is placed within the grid -- */
+            grid-column-start: 4;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+        
+        .article.two {
+        
+            /* -- This is the postion on where the container is placed within the grid -- */
+            grid-column-start: 4;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        
+        .article.three {
+            /* -- This is the postion on where the container is placed within the grid -- */
+            grid-column-start: 4;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        
+        .article.four {
+            /* -- This is the postion on where the container is placed within the grid -- */
+            grid-column-start: 4;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+
+        .weather.two {
+            /* -- This is the postion on where the container is placed within the grid -- */
+            grid-column-start: 4;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+        
+        .weather.three {
+        
+            /* -- This is the postion on where the container is placed within the grid -- */
+            grid-column-start: 4;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+        
+        .weather.four {
+            /* -- This is the postion on where the container is placed within the grid -- */
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+        .weather.five {
+            /* -- This is the postion on where the container is placed within the grid -- */
+            grid-column-start: 2;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+
+        
+        /* -- This is tablet and laptop css news article -- */
+        
+        
+        @media (max-width: 1024px) {
+         
+        
+            .article.one {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 3;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+        
+            .article.two {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 4;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+        
+            .article.three {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 3;
+                grid-column-end: 3;
+                grid-row-start: 3;
+                grid-row-end: 3;
+            }
+        
+            .article.four {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 4;
+                grid-column-end: 4;
+                grid-row-start: 3;
+                grid-row-end: 3;
+            }
+        }
+        
+        
+        /* -- This is mobile and tablet css  news article-- */
+        @media (max-width: 800px) {
+            
+            .article.one {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+        
+            .article.two {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 4;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+        
+            .article.three {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 4;
+                grid-column-end: 4;
+                grid-row-start: 4;
+                grid-row-end: 4;
+            }
+        
+            .article.four {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 4;
+                grid-column-end: 3;
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+        }
+
+        /* -- This is mobile and tablet css WEATHER ONE -- */
+        @media (max-width: 800px) {
+            
+            .weather.two {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 2;
+                grid-column-end: 1;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+            
+            .weather.three {
+            
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 3;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+            
+            .weather.four {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+    
+            .weather.five {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 2;
+                grid-column-end: 1;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+           
+        }
+
+        
+        /* -- This is mobile css news article -- */
+        @media (max-width: 480px) {
+           
+            .article.one {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 2;
+                grid-column-end: 1;
+                grid-row-start: 4;
+                grid-row-end: 4;
+            }
+            
+            .article.two {
+            
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 2;
+                grid-column-end: 1;
+                grid-row-start: 3;
+                grid-row-end: 3;
+            }
+            
+            .article.three {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 2;
+                grid-column-end: 1;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+    
+            .article.four {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 2;
+                grid-column-end: 1;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+
+        }
+
+
+         /* -- This is mobile css weather -- */
+         @media (max-width: 480px) {
+           
+            .weather.two {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 2;
+                grid-column-end: 1;
+                grid-row-start: 4;
+                grid-row-end: 4;
+            }
+            
+            .weather.three {
+            
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 2;
+                grid-column-end: 1;
+                grid-row-start: 3;
+                grid-row-end: 3;
+            }
+            
+            .weather.four {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 2;
+                grid-column-end: 1;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+    
+            .weather.five {
+                /* -- This is the postion on where the container is placed within the grid -- */
+                grid-column-start: 2;
+                grid-column-end: 1;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+
+            .searchbar{
+
+                position:relative; left:2px; top:2px; /* -- This allows me to move the search bar anywhere -- */
+
+    
+            }
+            
+
+        }
+
+
+        

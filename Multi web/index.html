@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="compnavbar">
+        <div><a class="title">Da Best News</a></div>
+        <div id="Links">
+        <a class="current-page">Home</a>
+        <a href="weather.html">Weather</a>
+        <a href="worldnews.html">World News</a>
+        </div>
+        <div id="hamburgerLinks">
+            <div><a class="current-page">Home</a></div>
+            <div><a href="weather.html">Weather</a></div>
+            <div><a href="worldnews.html">World News</a></div>
+        </div>
+        <a href="javascript:void(0);" class="item" onclick="myFunction()"></a>
+      </div>
+    
+      <main>
+       
+        <div class="container">
+
+            <div class="titleweather">
+                <h2>Uk News</h2> 
+                </div>
+
+            <div class="grid">
+
+                <div class="article one">
+                    <img src="images/queen.jpg" class="article_img">
+                    <h2>Queen beams on balcony as Jubilee</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    
+                </div>
+
+                <div class="article two">
+                    <img src="images/7715.png" class="article_img">
+                    <h2>Borris</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur....</p>
+                
+                </div>
+
+                <div class="article three">
+                    <img src="images/drivel.jpg" class="article_img">
+                    <h2>Learner driver</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur....</p>
+                   
+                </div>
+
+
+                <div class="article four">
+                    <img src="images/johnny.jpg" class="article_img">
+                    <h2>Johnny</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur....</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Copyright &copy; 2022 Da Best News.
+    </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("hamburgerLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+
+</body>
+
+</html>

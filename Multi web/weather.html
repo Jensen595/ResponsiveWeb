@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+   
+        
+<div class="compnavbar">
+  <a class>Da Best News</a>
+    <div id="Links">
+    <a href="index.html">Home</a>
+    <a class="current-page">Weather</a>
+    <a href="worldnews.html">World News</a>
+    </div>
+    <div id="hamburgerLinks">
+        <div><a href="index.html">Home</a></div>
+        <div><a class="current-page">Weather</a></div>
+        <div><a href="worldnews.html">World News</a></div>
+    </div>
+    <a href="javascript:void(0);" class="item" onclick="myFunction()"></a>
+  </div>
+
+    <main>
+
+    <main>
+      
+      <div class="container">
+
+        <div class="titleweather">
+        <h2>Weather in Bristol</h2> 
+        </div>
+
+        <div class="searchbar">
+        <input type="text" placeholder="Enter a town, city or UK postcode" size="33">
+        
+        </div>
+
+        <div class="grid">
+
+          
+
+            <div class="weather two">
+                <img src="images/weatherimgfour.jpg" class="weather_img">
+                <h2>Tue 11th</h2>
+                <p>Light clouds and a gentle breaze</p>
+                
+            </div>
+
+            <div class="weather three">
+                <img src="images/weatherimgthree.jpg" class="weather_img">
+                <h2>Wed 12th</h2>
+                <p>Light rain showers and a moderate breeze</p>
+            
+            </div>
+
+            <div class="weather four">
+                <img src="images/weatherimgtwo.jpg" class="weather_img">
+                <h2>Mon 10th</h2>
+                <p>Heavy rain and fresh breaze</p>
+               
+            </div>
+
+            <div class="weather five">
+              <img src="images/weatherimg.jpg" class="weather_img">
+              <h2>Today</h2>
+              <p>Sunny intervals and a fresh breeze</p>
+             
+          </div>
+
+
+           
+        </div>
+    </div>
+
+    </main>
+
+    <footer>
+      Copyright &copy; 2022 Da Best News.
+    </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("hamburgerLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+
+</body>
+
+</html>

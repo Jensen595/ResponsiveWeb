@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* -- controls the font in the website -- */
+    background: #eee;
+
+  }
+  
+  .compnavbar {
+    overflow: hidden; 
+    background-color: #333;
+    position: relative;
+  }
+  
+  .compnavbar a {
+    padding: 14px 16px; /* -- Gives space around text -- */
+    text-decoration: none;
+    font-size: 17px; /* -- changes size of text -- */
+    display: block;
+  }
+  
+  .compnavbar a.item {
+    background: rgb(255, 174, 0); /* -- background color of hamberger menu -- */
+    display: block;
+    position: absolute; 
+    right: 0;
+    top: 0;
+  }
+ 
+  .compnavbar #hamburgerLinks {
+    display: none;
+  }
+
+  .compnavbar{
+    display: flex;
+  }
+
+  #Links{
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+
+  @media (min-width: 1024px) {
+   
+    .compnavbar a.item {
+        display: none;
+    } 
+
+}
+
+@media (max-width: 1024px) {
+   
+    #Links {
+        display: none;
+    }
+
+  
+}
+
+
+.worldnews.one {
+  /* -- This is the postion on where the container is placed within the grid -- */
+  grid-column-start: 4;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.worldnews.two {
+
+  /* -- This is the postion on where the container is placed within the grid -- */
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.worldnews.three {
+  /* -- This is the postion on where the container is placed within the grid -- */
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.worldnews.four {
+  /* -- This is the postion on where the container is placed within the grid -- */
+  grid-column-start: 2;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.worldnews.five {
+  /* -- This is the postion on where the container is placed within the grid -- */
+  grid-column-start: 4;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.worldnews.six {
+
+  /* -- This is the postion on where the container is placed within the grid -- */
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.worldnews.seven {
+  /* -- This is the postion on where the container is placed within the grid -- */
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.worldnews.eight {
+  /* -- This is the postion on where the container is placed within the grid -- */
+  grid-column-start: 2;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+@media (max-width: 800px) {
+  .worldnews.one {
+    /* -- This is the postion on where the container is placed within the grid -- */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  
+  .worldnews.two {
+  
+    /* -- This is the postion on where the container is placed within the grid -- */
+    grid-column-start: 2;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+   
+  .worldnews.seven {
+    /* -- This is the postion on where the container is placed within the grid -- */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  .worldnews.eight {
+    /* -- This is the postion on where the container is placed within the grid -- */
+    grid-column-start: 2;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  
+  .worldnews.five {
+    /* -- This is the postion on where the container is placed within the grid -- */
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  .worldnews.six {
+  
+    /* -- This is the postion on where the container is placed within the grid -- */
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;
+  }
+        
+  
+}
+
+  /* -- This is mobile css world news-- */
+  @media (max-width: 480px) {
+    
+    .worldnews.eight {
+      /* -- This is the postion on where the container is placed within the grid -- */
+      grid-column-start: 2;
+      grid-column-end: 1;
+      grid-row-start: 3;
+      grid-row-end: 3;
+    }
+    
+    .worldnews.five {
+      /* -- This is the postion on where the container is placed within the grid -- */
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 4;
+      grid-row-end: 4;
+    }
+    .worldnews.three {
+      /* -- This is the postion on where the container is placed within the grid -- */
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 5;
+      grid-row-end: 5;
+    }
+
+    .worldnews.one {
+      /* -- This is the postion on where the container is placed within the grid -- */
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 6;
+      grid-row-end: 6;
+    }
+
+    .worldnews.seven {
+      /* -- This is the postion on where the container is placed within the grid -- */
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 7;
+      grid-row-end: 7;
+    }
+
+
+    .worldnews.six {
+    
+      /* -- This is the postion on where the container is placed within the grid -- */
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 8;
+      grid-row-end: 8;
+    }
+  
+}
+
+
+
